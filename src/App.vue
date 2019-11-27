@@ -1,17 +1,27 @@
+/*eslint no-console: ["error", { allow: ["warn", "log"] }] */
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppHeader />
+    <h1>Next PATCO</h1>
+
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AppHeader,
+    AppFooter
   }
 }
 </script>

@@ -1,6 +1,11 @@
 <template>
-  <h1>I am a header!</h1>
-
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>Next PATCO</h1>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

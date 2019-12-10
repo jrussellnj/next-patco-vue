@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-
+import vuetify from './plugins/vuetify';
 import App from './App.vue';
 import StationList from './components/StationList.vue';
 import StationDetails from './components/StationDetails.vue';
+
+Vue.use(VueRouter)
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -30,5 +30,6 @@ const router = new VueRouter({
 // whole app router-aware.
 new Vue({
   router,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')
